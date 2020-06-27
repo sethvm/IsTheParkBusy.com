@@ -1,5 +1,5 @@
 #wrapper {
-    max-width: 1024px;
+    max-width: 768px;
     height: 100%;
     margin: 0 auto;
     padding: 25px;
@@ -29,9 +29,10 @@ h4 strong {
 
 .fb-share-button {
     display: inline;
-
+    line-height: 21px;
 }
 
 .tw-share-button {
     display: inline;
+    line-height: 0px;
 }
