@@ -16,21 +16,22 @@ h4 strong {
 
 .footer {
     width: 100%;
-}
-
-.footer-txt {
     text-align: center;
-}
-
-.header {
-    position: relative;
-}
-
-.horizontal-list {
-    display: inline;
-    list-style: none;
 }
 
 .park-name {
     width: 100%;
+}
+
+.social{
+    float: right;
+}
+
+.fb-share-button {
+    display: inline;
+
+}
+
+.tw-share-button {
+    display: inline;
 }
