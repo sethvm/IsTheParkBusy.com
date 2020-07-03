@@ -53,3 +53,48 @@ h4 strong {
 .ig-icon {
     font-size: 18px;
 }
+
+/*---- mobile queries ----*/
+
+@media (max-width: 450px) {
+
+    body {
+        font-size: 0.75rem;
+    }
+
+    /*---- header ----*/
+
+    .header {
+        font-size: 1.15em;
+        padding-left: 5px;
+        padding-bottom: 20px;
+    }
+
+    .social {
+        float: left;
+    }
+
+    .fb-share-button {
+        display: block;
+        line-height: 5px;
+    }
+    
+    .tw-share-button {
+        display: block;
+    }
+
+    /*---- page content ----*/
+
+    .park-name, .park-stat {
+        font-size: 1.15em;
+    }
+}
+
+@media (max-width: 530px) {
+    
+    /*---- footer and tagline ----*/
+
+    .tagline {
+        font-size: 0.85em;
+    }
+}
