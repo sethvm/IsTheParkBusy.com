@@ -1,3 +1,15 @@
+body {
+    font-family: Futura, 'Nunito Sans',  sans-serif;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+h4 strong {
+    font-size: 1.25em;
+}
+
 #wrapper {
     max-width: 768px;
     height: 100%;
@@ -5,13 +17,10 @@
     padding: 25px;
 }
 
-h4 strong {
-    font-size: 1.5em;
-}
+/*---- header ----*/
 
-.content {
-    margin-top: 40px;
-    margin-bottom: 50px;
+.social {
+    float: right;
 }
 
 .fb-share-button {
@@ -19,19 +28,28 @@ h4 strong {
     line-height: 21px;
 }
 
-.footer {
-    width: 100%;
-    text-align: center;
+.tw-share-button {
+    display: inline;
+}
+
+/*---- page content ----*/
+
+.content {
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .park-name {
     width: 100%;
 }
 
-.social{
-    float: right;
+/*---- footer and tagline ----*/
+
+.footer {
+    width: 100%;
+    text-align: center;
 }
 
-.tw-share-button {
-    display: inline;
+.ig-icon {
+    font-size: 18px;
 }
