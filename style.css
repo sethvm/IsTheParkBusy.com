@@ -1,5 +1,8 @@
+/* responsive styling is arranged mobile-first! */
+
 body {
     font-family: Futura, 'Nunito Sans',  sans-serif;
+    font-size: 0.75rem;
 }
 
 a, a:visited {
@@ -8,6 +11,13 @@ a, a:visited {
 
 h4 strong {
     font-size: 1.25em;
+}
+
+hr {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background: #e7e7e7;
 }
 
 #wrapper {
@@ -19,24 +29,39 @@ h4 strong {
 
 /*---- header ----*/
 
-.social {
-    float: right;
+.header {
+    width: 100%;
 }
 
-.fb-share-button {
-    display: inline;
-    line-height: 21px;
+.title {
+    font-size: 1.2em;
+    padding-left: 5px;
 }
 
-.tw-share-button {
-    display: inline;
+.social-fluid {
+    display: block;
+    height: 20px;
+    padding: 5px 0 5px 5px;
+}
+
+.fb-fluid, .tw-fluid {
+    float: left;
+    height: 20px;
+}
+
+.fb-fluid {
+    margin-right: 10px;
 }
 
 /*---- page content ----*/
 
 .content {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.park-name, .park-stat {
+    font-size: 1.15em;
 }
 
 .park-name {
@@ -50,51 +75,56 @@ h4 strong {
     text-align: center;
 }
 
+.tagline {
+    font-size: 0.85em;
+}
+
 .ig-icon {
     font-size: 18px;
 }
 
-/*---- mobile queries ----*/
 
-@media (max-width: 450px) {
+/*---- desktop breakpoints ----*/
 
-    body {
-        font-size: 0.75rem;
-    }
-
-    /*---- header ----*/
-
-    .header {
-        font-size: 1.15em;
-        padding-left: 5px;
-        padding-bottom: 20px;
-    }
-
-    .social {
-        float: left;
-    }
-
-    .fb-share-button {
-        display: block;
-        line-height: 5px;
-    }
-    
-    .tw-share-button {
-        display: block;
-    }
+@media (min-width: 451px) {
 
     /*---- page content ----*/
 
     .park-name, .park-stat {
-        font-size: 1.15em;
+        font-size: 1.1em;
     }
 }
 
-@media (max-width: 530px) {
+@media (min-width: 600px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    /*---- header ----*/
+
+    .title {
+        display: inline-block;
+    }
+
+    .social-fluid {
+        float: right;
+        height: 0;
+        padding: 46px 0 0 0;
+        margin-bottom: 0;
+    }
+
+    .fb-fluid, .tw-fluid {
+        display: inline;
+    }
+
+    .fb-fluid {
+        line-height: 20px;
+    }
     
     /*---- footer and tagline ----*/
 
     .tagline {
-        font-size: 0.85em;
+        font-size: 1em;
     }
 }
