@@ -3,9 +3,11 @@
 body {
     font-family: Futura, 'Nunito Sans',  sans-serif;
     font-size: 0.75rem;
+    color: #111111;
+    background: #ffffff;
 }
 
-a, a:visited {
+a:link, a:visited {
     text-decoration: none;
 }
 
@@ -13,7 +15,7 @@ h1 {
     font-weight: 800;
 }
 
-h4 > strong {
+span > strong {
     font-size: 1.25em;
 }
 
@@ -29,6 +31,24 @@ hr {
     height: 100%;
     margin: 0 auto;
     padding: 25px;
+}
+
+/*---- colours ----*/
+
+.blue {
+    color: #0c2386;
+}
+
+.red, .active {
+    color: #f6372a;
+}
+
+.insta {
+    color: #8a3ab9;
+}
+
+.grey, .inactive .fa-map-marker {
+    color: #7e7e7e;
 }
 
 /*---- header ----*/
