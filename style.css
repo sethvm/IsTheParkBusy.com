@@ -3,6 +3,7 @@
 body {
     font-family: Futura, 'Nunito Sans',  sans-serif;
     font-size: 0.75rem;
+    letter-spacing: 1px;
     color: #111111;
     background: #ffffff;
 }
@@ -17,13 +18,6 @@ h1 {
 
 span > strong {
     font-size: 1.25em;
-}
-
-hr {
-    width: 80%;
-    border: 0;
-    height: 1px;
-    background: #e7e7e7;
 }
 
 #wrapper {
@@ -103,12 +97,30 @@ hr {
     font-size: 0.85em;
 }
 
+.mead-banner {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+.mead-img {
+    width: 40px;
+    height: auto;
+}
+
+.divider {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background: #e7e7e7;
+}
+
 .ig-icon {
     font-size: 18px;
 }
 
 
-/*---- desktop breakpoints ----*/
+/*---- responsive breakpoints ----*/
 
 @media (min-width: 451px) {
 
@@ -116,6 +128,12 @@ hr {
 
     .park-name, .park-stat {
         font-size: 1.1em;
+    }
+
+    /*---- footer and tagline ----*/
+
+    .mead-img {
+        width: 100px;
     }
 }
 
@@ -152,3 +170,22 @@ hr {
         font-size: 1em;
     }
 }
+
+@media (min-width: 670px) {
+    
+    /*---- footer and tagline ----*/
+
+    .mead-img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1000px) {
+    
+    /*---- footer and tagline ----*/
+
+    .mead-img {
+        width: 320px;
+    }
+}
+
